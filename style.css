@@ -40,14 +40,19 @@ body main {
   opacity: 0.8;
   margin: 5rem;
   border: 2px solid #c09797;
-  border-radius: 75px;
+  border-radius: 15px;
 }
 
 body main form {
   padding: 2rem;
 }
 
-body main form label {
-  font-size: 1.5rem;
+body main form label.label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body main form input {
+  margin: 1.2rem 0rem 1.2rem 0rem;
 }
 /*# sourceMappingURL=style.css.map */

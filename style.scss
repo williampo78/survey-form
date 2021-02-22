@@ -23,15 +23,22 @@ body {
     opacity: 0.8;
     margin: 5rem;
     border: 2px solid rgb(192, 151, 151);
-    border-radius: 75px;
+    border-radius: 15px;
     form {
       // display: flex;
       // flex-direction: column;
       // justify-content: center;
       // align-items: center;
       padding: 2rem;
-      label {
-        font-size: 1.5rem;
+      // label {
+      //   font-size: 1.5rem;
+      // }
+      label.label {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      input {
+        margin: 1.2rem 0rem 1.2rem 0rem;
       }
     }
   }
