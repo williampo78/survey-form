@@ -2,9 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans SC", sans-serif;
 }
 
 body {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +14,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+  font-size: 1.2rem;
+  color: rgb(65, 10, 10);
   main {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,14 +26,25 @@ body {
     background-color: white;
     opacity: 0.8;
     margin: 5rem;
+    padding: 1erm 0rem 1rem 0rem;
     border: 2px solid rgb(192, 151, 151);
     border-radius: 15px;
+    h1#title {
+      margin-top: 2rem;
+    }
+    p {
+      font-weight: 600;
+    }
+    p#description {
+      font-weight: normal;
+    }
     form {
       // display: flex;
       // flex-direction: column;
       // justify-content: center;
       // align-items: center;
       padding: 2rem;
+      width: 50vw;
       // label {
       //   font-size: 1.5rem;
       // }
@@ -37,8 +52,33 @@ body {
         font-size: 1.2rem;
         font-weight: bold;
       }
-      input {
-        margin: 1.2rem 0rem 1.2rem 0rem;
+      label.sat {
+        // padding-left: 1rem;
+        cursor: pointer;
+      }
+      div {
+        display: inline-block;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    main {
+      width: 100vw;
+      margin: 80px 0px 80px 0px;
+      form {
+        width: 100vw;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.4rem;
       }
     }
   }

@@ -3,9 +3,11 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Noto Sans SC", sans-serif;
 }
 
 body {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,9 +21,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 1.2rem;
+  color: #410a0a;
 }
 
 body main {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,12 +44,26 @@ body main {
   background-color: white;
   opacity: 0.8;
   margin: 5rem;
+  padding: 1erm 0rem 1rem 0rem;
   border: 2px solid #c09797;
   border-radius: 15px;
 }
 
+body main h1#title {
+  margin-top: 2rem;
+}
+
+body main p {
+  font-weight: 600;
+}
+
+body main p#description {
+  font-weight: normal;
+}
+
 body main form {
   padding: 2rem;
+  width: 50vw;
 }
 
 body main form label.label {
@@ -52,7 +71,31 @@ body main form label.label {
   font-weight: bold;
 }
 
-body main form input {
-  margin: 1.2rem 0rem 1.2rem 0rem;
+body main form label.sat {
+  cursor: pointer;
+}
+
+body main form div {
+  display: inline-block;
+}
+
+body main form h3 {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 680px) {
+  body main {
+    width: 100vw;
+    margin: 80px 0px 80px 0px;
+  }
+  body main form {
+    width: 100vw;
+  }
+  body main h1 {
+    font-size: 2rem;
+  }
+  body main h2 {
+    font-size: 1.4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
